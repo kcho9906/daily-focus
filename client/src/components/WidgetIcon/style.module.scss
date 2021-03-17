@@ -1,0 +1,24 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+}
+
+.cardContent {
+    text-align: center;
+}
+
+.media{
+    display: block;
+    max-width:250px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+}
+
+.card::selection {
+    border-color:aqua;
+    border-width: 5px;
+    color:red;
+}
