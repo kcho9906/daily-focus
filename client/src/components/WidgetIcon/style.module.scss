@@ -5,8 +5,10 @@
     height: 350px;
 }
 
+
 .cardContent {
     text-align: center;
+    font-family:"Ropa Sans";
 }
 
 .media{
@@ -19,6 +21,6 @@
 
 .selectedCard{
     box-sizing: border-box;
-    border: 3px solid red;
+    border: 3px solid #30A0F5;
     border-radius: 10px;
 }
