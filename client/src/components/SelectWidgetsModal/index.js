@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import createPersistedState from "use-persisted-state";
 import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
 import DialogContent from "@material-ui/core/DialogContent";
@@ -20,9 +21,11 @@ const useStyles = makeStyles({
     },
 });
 
+const useWidgetState = createPersistedState("selectedWidgets");
+
 function SelectWidgetsModal() {
     const [open, setOpen] = useState(false);
-    const [selectedWidgets, setSelectedWidgets] = useState([]);
+    const [selectedWidgets, setSelectedWidgets] = useWidgetState([]);
 
     const classes = useStyles();
 
