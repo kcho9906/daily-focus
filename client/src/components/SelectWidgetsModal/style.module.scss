@@ -15,9 +15,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 350px;
+    height: 300px;
+    border-radius: 15px;    
 }
 
-.cardContent {
+.title {
     text-align: center;
+    font-family:"Ropa Sans";
 }

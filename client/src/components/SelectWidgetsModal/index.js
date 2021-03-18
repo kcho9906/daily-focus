@@ -29,9 +29,13 @@ function SelectWidgetsModal() {
 
     return (
         <div>
-            <Button onClick={handleClickOpen}>Manage Widgets</Button>
-            <Dialog className="dialog" open={open} onClose={handleClose}>
-                <DialogTitle>Select your widgets</DialogTitle>
+            <Button variant="contained" color="primary" onClick={handleClickOpen}>
+                Manage Widgets
+            </Button>
+            <Dialog className={styles.dialog} open={open} onClose={handleClose}>
+                <DialogTitle>
+                    <p className={styles.title}>Select your widgets</p>
+                </DialogTitle>
                 <DialogContent className={styles.selectWidgetDialog}>
                     <Grid container spacing={3}>
                         <WidgetIcon
